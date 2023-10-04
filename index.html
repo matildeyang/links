@@ -1,6 +1,5 @@
 
 <html>
-  <h1>My link in bio</h1>
   <head>
     <style>
       body{
@@ -15,6 +14,7 @@
         height: 128px;
         border-radius: 128px;
         object-fit: cover;
+        justify-content: center;
       }
     </style>
     <style>
@@ -29,36 +29,54 @@
     <style>
       body{
         background-color: #e3f6f5;
+        justify-content: center;
       }
 
       .name{
         background-color: white;
+        justify-content: center;
       }
 
       .social-links a{
-        background-color: #004643;
+        background-color: none;
         text-decoration: none;
+        justify-content: space-around;
       } 
 
       .link{
         background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 5px;
       }
 
       .link a{
         background-color: aliceblue;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
       }
     </style>
 
     <style>
       .items{
         display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
 
   <body>
     <div class="items">
+      <h1>My link in bio</h1>
       <div class="banner">
         <img src="jaime-dantas-WROg3LroIIU-unsplash.jpg" alt="Mati Yang headshot" class="banner-image">
       </div>
@@ -68,7 +86,7 @@
       </div>
 
       <div class="social-links">
-        # target blank is for links in a new tab (is this right way to leave notes )
+        <!-- target blank is for links in a new tab (is this right way to leave notes ) -->
         <img src="christin-hume-mfB1B1s4sMc-unsplash.jpg" alt="Github icon" class="thumbnail"> 
         <a href="https://github.com/matildeyang" target="_blank">
           GitHub
